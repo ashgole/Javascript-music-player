@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+:root {
+    --font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background-color: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: var(--font-family);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: dodgerblue;
+    color: white;
+    align-items: center;
+}
+
+nav li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 65vh;
+    background-color: gold;
+    color: white;
+    font-family: var(--font-family);
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 30px;
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    height: 100px;
+    background-color: dodgerblue;
+    color: white;
+    bottom: 0;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 10px;
+    border-radius: 50px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 20vh;
+    font-family: var(--font-family);
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
